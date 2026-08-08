@@ -1,28 +1,26 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AM Brand — Premium Clothing</title>
+<title>AM BRAND | Premium Clothing</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+
 body{
   font-family:Arial,Helvetica,sans-serif;
   background:#080808;
   color:#fff;
 }
-a{text-decoration:none;color:inherit}
 
 :root{
   --gold:#d9a94b;
-  --gold2:#f0c66d;
-  --black:#080808;
-  --card:#111;
-  --line:#383838;
+  --gold2:#f0c66a;
 }
 
-/* HEADER */
+a{text-decoration:none;color:inherit}
+
 header{
   position:sticky;
   top:0;
@@ -31,107 +29,97 @@ header{
   border-bottom:1px solid #292929;
 }
 
+.topbar{
+  text-align:center;
+  padding:8px;
+  font-size:11px;
+  color:var(--gold2);
+  border-bottom:1px solid #292929;
+}
+
 .nav{
   max-width:1200px;
   margin:auto;
-  min-height:78px;
+  min-height:80px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:10px 25px;
+  padding:12px 25px;
 }
 
-.logo{
-  color:var(--gold2);
+.logo strong{
   font-family:Georgia,serif;
-  font-size:34px;
-  line-height:25px;
-  text-align:center;
+  font-size:40px;
+  color:var(--gold2);
+  letter-spacing:2px;
 }
 
 .logo span{
   display:block;
-  font-family:Arial,sans-serif;
   font-size:10px;
-  letter-spacing:4px;
-  margin-top:6px;
+  letter-spacing:7px;
+  margin-top:9px;
+  color:#ddd;
 }
 
-.menu{
+nav{
   display:flex;
-  gap:34px;
-  align-items:center;
+  gap:28px;
 }
 
-.menu a{
-  font-size:14px;
-  transition:.3s;
+nav a{
+  font-size:13px;
+  color:#ddd;
 }
 
-.menu a:hover,
-.menu a.active{
+nav a:hover{
   color:var(--gold2);
 }
 
 .cart{
   font-size:25px;
-  color:var(--gold2);
-  cursor:pointer;
   position:relative;
 }
 
 .cart-count{
   position:absolute;
-  top:-8px;
-  right:-10px;
+  top:-9px;
+  right:-12px;
   background:var(--gold);
-  color:#111;
-  width:18px;
-  height:18px;
+  color:#000;
+  width:20px;
+  height:20px;
   border-radius:50%;
-  font-size:11px;
   display:flex;
   align-items:center;
   justify-content:center;
+  font-size:11px;
   font-weight:bold;
 }
 
-/* HERO */
 .hero{
-  min-height:390px;
-  background:
-    radial-gradient(circle at 75% 50%,#292929 0,#111 35%,#050505 70%);
+  min-height:560px;
   display:flex;
   align-items:center;
-  overflow:hidden;
-  border-bottom:1px solid #333;
+  padding:70px 7%;
+  background:radial-gradient(circle at 75% 50%,#292218 0,#111 30%,#080808 65%);
 }
 
-.hero-inner{
-  max-width:1200px;
-  width:100%;
-  margin:auto;
-  padding:50px 35px;
-  position:relative;
+.hero-content{
+  max-width:650px;
 }
 
-.hero-text{
-  position:relative;
-  z-index:2;
-  max-width:600px;
-}
-
-.hero-small{
+.small-title{
   color:var(--gold2);
-  font-size:28px;
+  font-size:20px;
   font-weight:bold;
-  margin-bottom:12px;
+  margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:52px;
-  line-height:1.05;
-  font-weight:900;
+  font-size:clamp(48px,7vw,82px);
+  line-height:.95;
+  margin-bottom:25px;
 }
 
 .hero h1 span{
@@ -139,470 +127,241 @@ header{
 }
 
 .hero p{
-  font-size:18px;
-  margin:22px 0;
-  color:#ddd;
+  color:#ccc;
+  font-size:20px;
+  margin-bottom:35px;
 }
 
 .btn{
   display:inline-block;
   background:var(--gold);
-  color:#111;
-  padding:13px 28px;
+  color:#000;
+  padding:16px 30px;
   font-weight:bold;
-  border:none;
-  cursor:pointer;
-  transition:.3s;
 }
 
-.btn:hover{
-  background:var(--gold2);
-  transform:translateY(-2px);
-}
-
-/* CLOTHING HERO VISUAL */
-.hero-shirt{
-  position:absolute;
-  right:5%;
-  top:25px;
-  width:430px;
-  height:330px;
-  opacity:.95;
-}
-
-.shirt-body{
-  position:absolute;
-  width:280px;
-  height:270px;
-  background:linear-gradient(135deg,#151515,#050505);
-  right:65px;
-  top:30px;
-  border-radius:35px 35px 18px 18px;
-  transform:skew(-4deg);
-  box-shadow:0 20px 50px #000;
-}
-
-.shirt-body:before,
-.shirt-body:after{
-  content:"";
-  position:absolute;
-  top:5px;
-  width:120px;
-  height:110px;
-  background:#111;
-}
-
-.shirt-body:before{
-  left:-75px;
-  transform:rotate(30deg);
-  border-radius:20px;
-}
-
-.shirt-body:after{
-  right:-75px;
-  transform:rotate(-30deg);
-  border-radius:20px;
-}
-
-.shirt-neck{
-  position:absolute;
-  width:95px;
-  height:45px;
-  border:7px solid #222;
-  border-radius:50%;
-  left:93px;
-  top:0;
-}
-
-.shirt-logo{
-  position:absolute;
-  top:105px;
-  left:125px;
-  color:var(--gold2);
-  font-family:Georgia,serif;
-  font-size:22px;
-}
-
-/* SECTION */
 .section{
   max-width:1200px;
   margin:auto;
-  padding:18px 30px 35px;
+  padding:60px 20px;
 }
 
-.section-head{
+.section-title{
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  margin-bottom:15px;
+  margin-bottom:30px;
 }
 
-.section-head h2{
-  font-size:24px;
+.section-title h2{
+  font-size:30px;
 }
 
-.view{
+.section-title a{
   color:var(--gold2);
-  font-size:14px;
 }
 
-/* PRODUCTS */
 .products{
   display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:8px;
-}
-
-.product{
-  background:#111;
-  border:1px solid #353535;
-  text-align:center;
-  overflow:hidden;
-  transition:.3s;
-}
-
-.product:hover{
-  border-color:var(--gold);
-  transform:translateY(-3px);
-}
-
-.product-img{
-  height:180px;
-  background:linear-gradient(145deg,#777,#252525);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
-  overflow:hidden;
-}
-
-/* simple t-shirt visual */
-.cloth{
-  width:110px;
-  height:125px;
-  background:var(--cloth,#111);
-  position:relative;
-  border-radius:8px 8px 15px 15px;
-  box-shadow:0 15px 25px #000;
-}
-
-.cloth:before,
-.cloth:after{
-  content:"";
-  position:absolute;
-  top:5px;
-  width:55px;
-  height:70px;
-  background:var(--cloth,#111);
-}
-
-.cloth:before{
-  left:-38px;
-  transform:rotate(32deg);
-}
-
-.cloth:after{
-  right:-38px;
-  transform:rotate(-32deg);
-}
-
-.cloth-logo{
-  position:absolute;
-  top:45px;
-  right:14px;
-  color:var(--gold2);
-  font-size:13px;
-  font-family:Georgia,serif;
-  z-index:2;
-}
-
-.product-info{
-  padding:9px 5px 10px;
-}
-
-.product-name{
-  font-size:13px;
-  min-height:32px;
-}
-
-.price{
-  color:#fff;
-  font-weight:bold;
-  margin:5px 0 9px;
-}
-
-.order{
-  display:block;
-  border:1px solid var(--gold);
-  color:var(--gold2);
-  padding:8px 4px;
-  margin:0 7px;
-  font-size:12px;
-  cursor:pointer;
-}
-
-.order:hover{
-  background:var(--gold);
-  color:#111;
-}
-
-/* POLO */
-.polo{
-  width:105px;
-  height:130px;
-  background:var(--cloth,#111);
-  position:relative;
-  border-radius:8px 8px 15px 15px;
-  box-shadow:0 15px 25px #000;
-}
-
-.polo:before,
-.polo:after{
-  content:"";
-  position:absolute;
-  top:5px;
-  width:50px;
-  height:72px;
-  background:var(--cloth,#111);
-}
-
-.polo:before{
-  left:-36px;
-  transform:rotate(30deg);
-}
-
-.polo:after{
-  right:-36px;
-  transform:rotate(-30deg);
-}
-
-.polo-neck{
-  position:absolute;
-  top:0;
-  left:34px;
-  width:38px;
-  height:35px;
-  border-left:2px solid #ddd;
-  border-right:2px solid #ddd;
-  border-bottom:2px solid #ddd;
-  z-index:2;
-}
-
-.polo-logo{
-  position:absolute;
-  right:12px;
-  top:55px;
-  color:var(--gold2);
-  font-family:Georgia,serif;
-  z-index:3;
-}
-
-/* TROUSER */
-.trouser{
-  width:125px;
-  height:150px;
-  position:relative;
-  background:var(--cloth,#111);
-  clip-path:polygon(0 0,100% 0,88% 100%,55% 100%,50% 48%,45% 100%,10% 100%);
-  box-shadow:0 15px 25px #000;
-}
-
-.trouser-logo{
-  position:absolute;
-  right:12px;
-  top:35px;
-  color:var(--gold2);
-  font-family:Georgia,serif;
-  font-size:12px;
-}
-
-/* FEATURES */
-.features{
-  border-top:1px solid #292929;
-  border-bottom:1px solid #292929;
-  max-width:1200px;
-  margin:5px auto 0;
-  padding:25px 30px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
 
-.feature{
-  display:flex;
-  gap:14px;
-  align-items:center;
+.product{
+  background:#121212;
+  border:1px solid #292929;
+  overflow:hidden;
+  transition:.25s;
 }
 
-.feature-icon{
+.product:hover{
+  transform:translateY(-4px);
+  border-color:var(--gold);
+}
+
+.product-img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  background:#eee;
+}
+
+.product-info{
+  padding:18px;
+}
+
+.product-name{
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.category{
+  color:#999;
+  font-size:12px;
+  margin-bottom:9px;
+}
+
+.price{
+  color:var(--gold2);
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:14px;
+}
+
+.add{
+  width:100%;
+  padding:12px;
+  background:#181818;
+  border:1px solid var(--gold);
+  color:var(--gold2);
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.add:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.category-box{
+  min-height:220px;
+  display:flex;
+  align-items:flex-end;
+  padding:25px;
+  background:linear-gradient(135deg,#191919,#080808);
+  border:1px solid #292929;
+}
+
+.category-box h3{
+  font-size:25px;
+}
+
+.category-box span{
+  display:block;
+  color:var(--gold2);
+  font-size:13px;
+  margin-top:7px;
+}
+
+.features{
+  background:#111;
+  border-top:1px solid #292929;
+  border-bottom:1px solid #292929;
+}
+
+.feature-grid{
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  text-align:center;
+}
+
+.feature h4{
+  color:var(--gold2);
+  margin-bottom:7px;
+}
+
+.feature p{
+  color:#999;
+  font-size:12px;
+}
+
+footer{
+  padding:50px 20px;
+  text-align:center;
+  background:#050505;
+}
+
+.footer-logo{
+  font-family:Georgia,serif;
   color:var(--gold2);
   font-size:35px;
 }
 
-.feature h3{
-  font-size:14px;
-  margin-bottom:5px;
-}
-
-.feature p{
-  color:#aaa;
-  font-size:12px;
-}
-
-/* FOOTER */
-footer{
-  max-width:1200px;
-  margin:auto;
-  padding:22px 30px;
-  text-align:center;
-  color:#aaa;
+footer p{
+  color:#777;
+  margin-top:10px;
   font-size:13px;
 }
 
-.footer-brand{
-  color:var(--gold2);
-  font-family:Georgia,serif;
-  font-size:22px;
-  margin-bottom:8px;
-}
-
-/* CART */
-.cart-panel{
+/* WHATSAPP */
+.whatsapp{
   position:fixed;
-  top:0;
-  right:-400px;
-  width:360px;
-  max-width:90%;
-  height:100vh;
-  background:#111;
-  z-index:2000;
-  border-left:1px solid var(--gold);
-  padding:25px;
-  transition:.4s;
-  box-shadow:-10px 0 40px #000;
-}
-
-.cart-panel.open{
-  right:0;
-}
-
-.cart-panel h2{
-  color:var(--gold2);
-  margin-bottom:20px;
-}
-
-.close{
-  float:right;
-  cursor:pointer;
-  font-size:25px;
-}
-
-.cart-item{
-  border-bottom:1px solid #333;
-  padding:12px 0;
-  font-size:14px;
-}
-
-.total{
-  margin-top:20px;
-  font-size:20px;
-  color:var(--gold2);
+  right:18px;
+  bottom:20px;
+  z-index:9999;
+  background:#25D366;
+  color:white;
+  padding:14px 20px;
+  border-radius:30px;
   font-weight:bold;
+  box-shadow:0 5px 20px #000;
 }
 
-/* MOBILE */
-@media(max-width:900px){
-  .menu{
-    gap:15px;
-  }
+@media(max-width:800px){
 
-  .menu a{
-    font-size:12px;
-  }
-
-  .products{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .hero h1{
-    font-size:40px;
-  }
-
-  .hero-shirt{
-    opacity:.25;
-    right:-80px;
-  }
-}
-
-@media(max-width:600px){
-  .nav{
-    padding:10px 15px;
-  }
-
-  .logo{
-    font-size:27px;
-  }
-
-  .menu{
+  nav{
     display:none;
   }
 
   .hero{
-    min-height:390px;
-  }
-
-  .hero-inner{
-    padding:40px 25px;
-  }
-
-  .hero-small{
-    font-size:21px;
+    min-height:500px;
+    padding:55px 30px;
   }
 
   .hero h1{
-    font-size:38px;
-  }
-
-  .hero p{
-    font-size:15px;
+    font-size:48px;
   }
 
   .products{
     grid-template-columns:repeat(2,1fr);
-    gap:8px;
+    gap:12px;
   }
 
   .product-img{
-    height:160px;
+    height:230px;
   }
 
-  .section{
-    padding:20px 10px 25px;
+  .categories{
+    grid-template-columns:1fr;
   }
 
-  .section-head h2{
-    font-size:21px;
-  }
-
-  .features{
+  .feature-grid{
     grid-template-columns:repeat(2,1fr);
-    padding:22px 12px;
+  }
+}
+
+@media(max-width:480px){
+
+  .logo strong{
+    font-size:32px;
   }
 
-  .feature{
-    gap:8px;
+  .products{
+    grid-template-columns:repeat(2,1fr);
   }
 
-  .feature-icon{
-    font-size:26px;
+  .product-img{
+    height:190px;
   }
 
-  .feature h3{
-    font-size:11px;
+  .hero h1{
+    font-size:43px;
   }
 
-  .feature p{
-    font-size:10px;
+  .whatsapp{
+    right:12px;
+    bottom:15px;
+    padding:12px 16px;
+    font-size:13px;
   }
 }
 </style>
@@ -611,348 +370,350 @@ footer{
 <body>
 
 <header>
-  <nav class="nav">
-    <div class="logo">AM<span>BRAND</span></div>
 
-    <div class="menu">
-      <a class="active" href="#home">HOME</a>
-      <a href="#tshirts">T-SHIRTS</a>
-      <a href="#polos">POLO SHIRTS</a>
-      <a href="#trousers">TROUSERS</a>
-      <a href="#about">ABOUT US</a>
-      <a href="#contact">CONTACT</a>
-    </div>
+<div class="topbar">
+🚚 FREE DELIVERY ON ORDERS ABOVE PKR 3000
+</div>
 
-    <div class="cart" onclick="openCart()">
-      🛒
-      <span class="cart-count" id="cartCount">0</span>
-    </div>
-  </nav>
+<div class="nav">
+
+<a href="#" class="logo">
+<strong>AM</strong>
+<span>BRAND</span>
+</a>
+
+<nav>
+<a href="#">HOME</a>
+<a href="#products">SHOP</a>
+<a href="#categories">COLLECTIONS</a>
+<a href="#">ABOUT US</a>
+<a href="#">CONTACT</a>
+</nav>
+
+<div class="cart">
+🛒
+<div class="cart-count" id="cartCount">0</div>
+</div>
+
+</div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-inner">
 
-    <div class="hero-text">
-      <div class="hero-small">AM BRAND</div>
+<section class="hero">
 
-      <h1>
-        PREMIUM QUALITY<br>
-        <span>CLOTHING</span>
-      </h1>
+<div class="hero-content">
 
-      <p>Premium Fabric. Perfect Fit. Timeless Style.</p>
+<div class="small-title">AM BRAND</div>
 
-      <a href="#tshirts" class="btn">SHOP NOW →</a>
-    </div>
+<h1>
+PREMIUM<br>
+QUALITY<br>
+<span>CLOTHING</span>
+</h1>
 
-    <div class="hero-shirt">
-      <div class="shirt-body">
-        <div class="shirt-neck"></div>
-        <div class="shirt-logo">AM</div>
-      </div>
-    </div>
+<p>
+Premium Fabric. Perfect Fit. Timeless Style.
+</p>
 
-  </div>
-</section>
-
-<!-- T SHIRTS -->
-<section class="section" id="tshirts">
-  <div class="section-head">
-    <h2>T-SHIRTS</h2>
-    <a class="view" href="#tshirts">VIEW ALL →</a>
-  </div>
-
-  <div class="products">
-
-    <div class="product">
-      <div class="product-img">
-        <div class="cloth" style="--cloth:#f2f2f2">
-          <div class="cloth-logo">AM</div>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-name">AM Classic White</div>
-        <div class="price">Rs. 1,399</div>
-        <div class="order" onclick="addCart('AM Classic White',1399)">🛒 ORDER NOW</div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="product-img">
-        <div class="cloth" style="--cloth:#090909">
-          <div class="cloth-logo">AM</div>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-name">AM Classic Black</div>
-        <div class="price">Rs. 1,399</div>
-        <div class="order" onclick="addCart('AM Classic Black',1399)">🛒 ORDER NOW</div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="product-img">
-        <div class="cloth" style="--cloth:#101c3d">
-          <div class="cloth-logo">AM</div>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-name">AM Navy Blue</div>
-        <div class="price">Rs. 1,399</div>
-        <div class="order" onclick="addCart('AM Navy Blue',1399)">🛒 ORDER NOW</div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="product-img">
-        <div class="cloth" style="--cloth:#656565">
-          <div class="cloth-logo">AM</div>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-name">AM Premium Grey</div>
-        <div class="price">Rs. 1,399</div>
-        <div class="order" onclick="addCart('AM Premium Grey',1399)">🛒 ORDER NOW</div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="product-img">
-        <div class="cloth" style="--cloth:#31401b">
-          <div class="cloth-logo">AM</div>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-name">AM Olive Green</div>
-        <div class="price">Rs. 1,399</div>
-        <div class="order" onclick="addCart('AM Olive Green',1399)">🛒 ORDER NOW</div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="product-img">
-        <div class="cloth" style="--cloth:#57131b">
-          <div class="cloth-logo">AM</div>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-name">AM Maroon</div>
-        <div class="price">Rs. 1,399</div>
-        <div class="order" onclick="addCart('AM Maroon',1399)">🛒 ORDER NOW</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- POLOS -->
-<section class="section" id="polos">
-  <div class="section-head">
-    <h2>POLO SHIRTS</h2>
-    <a class="view" href="#polos">VIEW ALL →</a>
-  </div>
-
-  <div class="products">
-
-    <script>
-      const polos=[
-        ['AM Beige Polo','#cdbb9a'],
-        ['AM Black Polo','#080808'],
-        ['AM Navy Polo','#101d40'],
-        ['AM White Polo','#eeeeee'],
-        ['AM Olive Polo','#304019'],
-        ['AM Maroon Polo','#5b151d']
-      ];
-
-      polos.forEach(p=>{
-        document.write(`
-        <div class="product">
-          <div class="product-img">
-            <div class="polo" style="--cloth:${p[1]}">
-              <div class="polo-neck"></div>
-              <div class="polo-logo">AM</div>
-            </div>
-          </div>
-          <div class="product-info">
-            <div class="product-name">${p[0]}</div>
-            <div class="price">Rs. 1,699</div>
-            <div class="order" onclick="addCart('${p[0]}',1699)">🛒 ORDER NOW</div>
-          </div>
-        </div>`);
-      });
-    </script>
-
-  </div>
-</section>
-
-<!-- TROUSERS -->
-<section class="section" id="trousers">
-  <div class="section-head">
-    <h2>TROUSERS</h2>
-    <a class="view" href="#trousers">VIEW ALL →</a>
-  </div>
-
-  <div class="products">
-
-    <script>
-      const trousers=[
-        ['AM Black Trouser','#101010'],
-        ['AM Navy Trouser','#101d3b'],
-        ['AM Grey Trouser','#666'],
-        ['AM Beige Trouser','#c6b28e'],
-        ['AM Olive Trouser','#34401d'],
-        ['AM Charcoal Trouser','#292929']
-      ];
-
-      trousers.forEach(p=>{
-        document.write(`
-        <div class="product">
-          <div class="product-img">
-            <div class="trouser" style="--cloth:${p[1]}">
-              <div class="trouser-logo">AM</div>
-            </div>
-          </div>
-          <div class="product-info">
-            <div class="product-name">${p[0]}</div>
-            <div class="price">Rs. 2,199</div>
-            <div class="order" onclick="addCart('${p[0]}',2199)">🛒 ORDER NOW</div>
-          </div>
-        </div>`);
-      });
-    </script>
-
-  </div>
-</section>
-
-<!-- FEATURES -->
-<div class="features" id="about">
-
-  <div class="feature">
-    <div class="feature-icon">🏅</div>
-    <div>
-      <h3>PREMIUM QUALITY</h3>
-      <p>Finest fabric for maximum comfort</p>
-    </div>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">🚚</div>
-    <div>
-      <h3>FAST DELIVERY</h3>
-      <p>Quick delivery all over Pakistan</p>
-    </div>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">📦</div>
-    <div>
-      <h3>EASY RETURNS</h3>
-      <p>7 days easy return policy</p>
-    </div>
-  </div>
-
-  <div class="feature">
-    <div class="feature-icon">🔒</div>
-    <div>
-      <h3>SAFE SHOPPING</h3>
-      <p>100% secure & safe checkout</p>
-    </div>
-  </div>
+<a href="#products" class="btn">
+SHOP NOW →
+</a>
 
 </div>
 
-<footer id="contact">
-  <div class="footer-brand">AM BRAND</div>
-  <p>© 2026 AM Brand Store. All Rights Reserved.</p>
+</section>
+
+
+<section class="section" id="products">
+
+<div class="section-title">
+<h2>OUR COLLECTION</h2>
+<a href="#">VIEW ALL →</a>
+</div>
+
+<div class="products">
+
+
+<!-- T SHIRT 1 -->
+
+<div class="product">
+
+<img class="product-img"
+src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85">
+
+<div class="product-info">
+
+<div class="product-name">
+AM Premium T-Shirt
+</div>
+
+<div class="category">
+T-SHIRTS
+</div>
+
+<div class="price">
+PKR 1,199
+</div>
+
+<button class="add" onclick="addCart()">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+
+<!-- T SHIRT 2 -->
+
+<div class="product">
+
+<img class="product-img"
+src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=85">
+
+<div class="product-info">
+
+<div class="product-name">
+AM Classic T-Shirt
+</div>
+
+<div class="category">
+T-SHIRTS
+</div>
+
+<div class="price">
+PKR 1,199
+</div>
+
+<button class="add" onclick="addCart()">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+
+<!-- POLO 1 -->
+
+<div class="product">
+
+<img class="product-img"
+src="https://images.unsplash.com/photo-1625910513413-5fc45b2e6d72?auto=format&fit=crop&w=700&q=85">
+
+<div class="product-info">
+
+<div class="product-name">
+AM Premium Polo
+</div>
+
+<div class="category">
+POLO SHIRTS
+</div>
+
+<div class="price">
+PKR 1,499
+</div>
+
+<button class="add" onclick="addCart()">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+
+<!-- POLO 2 -->
+
+<div class="product">
+
+<img class="product-img"
+src="https://images.unsplash.com/photo-1586363104868-3a5e2ab60d99?auto=format&fit=crop&w=700&q=85">
+
+<div class="product-info">
+
+<div class="product-name">
+AM Classic Polo
+</div>
+
+<div class="category">
+POLO SHIRTS
+</div>
+
+<div class="price">
+PKR 1,499
+</div>
+
+<button class="add" onclick="addCart()">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+
+<!-- BAGGY TROUSER 1 -->
+
+<div class="product">
+
+<img class="product-img"
+src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=85">
+
+<div class="product-info">
+
+<div class="product-name">
+AM Baggy Trousers
+</div>
+
+<div class="category">
+BAGGY TROUSERS
+</div>
+
+<div class="price">
+PKR 1,499
+</div>
+
+<button class="add" onclick="addCart()">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+
+<!-- BAGGY TROUSER 2 -->
+
+<div class="product">
+
+<img class="product-img"
+src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=85">
+
+<div class="product-info">
+
+<div class="product-name">
+AM Premium Baggy
+</div>
+
+<div class="category">
+BAGGY TROUSERS
+</div>
+
+<div class="price">
+PKR 1,499
+</div>
+
+<button class="add" onclick="addCart()">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section class="section" id="categories">
+
+<div class="section-title">
+<h2>SHOP BY CATEGORY</h2>
+</div>
+
+<div class="categories">
+
+<a href="#products" class="category-box">
+<div>
+<h3>T-SHIRTS</h3>
+<span>FROM PKR 1,199 →</span>
+</div>
+</a>
+
+<a href="#products" class="category-box">
+<div>
+<h3>POLO SHIRTS</h3>
+<span>FROM PKR 1,499 →</span>
+</div>
+</a>
+
+<a href="#products" class="category-box">
+<div>
+<h3>BAGGY TROUSERS</h3>
+<span>FROM PKR 1,499 →</span>
+</div>
+</a>
+
+</div>
+</section>
+
+
+<section class="features">
+
+<div class="feature-grid">
+
+<div class="feature">
+<h4>✦ PREMIUM QUALITY</h4>
+<p>Finest Fabric</p>
+</div>
+
+<div class="feature">
+<h4>↩ EASY RETURNS</h4>
+<p>7 Days Return</p>
+</div>
+
+<div class="feature">
+<h4>🚚 FAST DELIVERY</h4>
+<p>All Over Pakistan</p>
+</div>
+
+<div class="feature">
+<h4>✓ SECURE PAYMENT</h4>
+<p>100% Safe</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-logo">
+AM BRAND
+</div>
+
+<p>
+Premium Clothing • Premium Style
+</p>
+
+<p>
+© 2026 AM Brand. All Rights Reserved.
+</p>
+
 </footer>
 
-<!-- CART -->
-<div class="cart-panel" id="cartPanel">
-  <span class="close" onclick="closeCart()">×</span>
-  <h2>Your Cart</h2>
 
-  <div id="cartItems">
-    <p style="color:#aaa">Your cart is empty.</p>
-  </div>
+<!-- WHATSAPP BUTTON -->
 
-  <div class="total">
-    Total: Rs. <span id="total">0</span>
-  </div>
+<a
+class="whatsapp"
+href="https://wa.me/923289508836?text=Assalam%20o%20Alaikum%2C%20mujhe%20AM%20Brand%20ke%20products%20ke%20bare%20mein%20maloomat%20chahiye."
+target="_blank">
 
-  <br>
+💬 WhatsApp Us
 
-  <button class="btn" onclick="whatsappOrder()">
-    ORDER ON WHATSAPP
-  </button>
-</div>
+</a>
+
 
 <script>
-let cart=[];
-let total=0;
 
-function addCart(name,price){
-  cart.push({name,price});
-  total+=price;
+let cart=0;
 
-  document.getElementById("cartCount").innerText=cart.length;
-  updateCart();
+function addCart(){
 
-  alert(name+" added to cart!");
+cart++;
+
+document.getElementById("cartCount").textContent=cart;
+
 }
 
-function updateCart(){
-  const box=document.getElementById("cartItems");
-
-  if(cart.length===0){
-    box.innerHTML='<p style="color:#aaa">Your cart is empty.</p>';
-  }else{
-    box.innerHTML=cart.map((item,i)=>`
-      <div class="cart-item">
-        ${item.name}<br>
-        <strong>Rs. ${item.price}</strong>
-      </div>
-    `).join("");
-  }
-
-  document.getElementById("total").innerText=total.toLocaleString();
-}
-
-function openCart(){
-  document.getElementById("cartPanel").classList.add("open");
-}
-
-function closeCart(){
-  document.getElementById("cartPanel").classList.remove("open");
-}
-
-function whatsappOrder(){
-
-  if(cart.length===0){
-    alert("Please add a product first.");
-    return;
-  }
-
-  let message="Assalam-o-Alaikum AM Brand, I want to order:%0A%0A";
-
-  cart.forEach(item=>{
-    message+="• "+item.name+" — Rs. "+item.price+"%0A";
-  });
-
-  message+="%0ATotal: Rs. "+total.toLocaleString();
-
-  /*
-   * Yahan apna WhatsApp number add karna hai.
-   * Example: 923001234567
-   */
-  let phone="923001234567";
-
-  window.open(
-    "https://wa.me/"+phone+"?text="+message,
-    "_blank"
-  );
-}
 </script>
 
 </body>
