@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AM Brand — Premium Polo T-Shirts</title>
+  <meta name="description" content="AM Brand premium polo T-shirts. Shop stylish, comfortable polos for Rs. 1,199.">
+  <meta name="theme-color" content="#07111d">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#07111d;--navy2:#0c1a2a;--gold:#d9a441;--cream:#f7f4ee;--text:#10151c;--muted:#68717c}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--text);line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .top{background:#050b12;color:#fff;padding:9px 5%;font-size:12px;text-align:center;border-bottom:1px solid #9b762d}
+    .top b{color:#f0bd4f}
+    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 5px 20px #0002}
+    nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 5%}
+    .logo{font-family:Georgia,serif;color:var(--gold);font-size:38px;line-height:.75;font-weight:bold}
+    .logo small{display:block;font:10px Arial;letter-spacing:4px;text-align:center;margin-top:8px}
+    .links{display:flex;gap:28px;font-size:14px}
+    .links a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:0;color:white;font-size:25px}
+    .hero{background:linear-gradient(100deg,#06101c 35%,#0e1d2d 70%,#172536);color:#fff}
+    .hero-in{max-width:1200px;margin:auto;min-height:560px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:55px 5%;gap:30px}
+    .eyebrow{color:var(--gold);font-weight:bold;letter-spacing:3px;font-size:14px}
+    h1{font:700 clamp(42px,6vw,72px)/.95 Georgia,serif;margin:14px 0}
+    h1 span{color:var(--gold)}
+    .hero p{color:#d9e0e7;max-width:500px;font-size:18px}
+    .btn{display:inline-block;background:var(--gold);color:#08111b;padding:13px 23px;border-radius:3px;font-weight:bold;margin-top:24px;border:1px solid var(--gold);cursor:pointer}
+    .btn.alt{background:transparent;color:var(--gold);margin-left:8px}
+    .hero-img{width:100%;max-height:450px;object-fit:cover;border-radius:12px;box-shadow:0 20px 60px #0007}
+    .features{max-width:1100px;margin:-35px auto 40px;background:#fff;border-radius:18px;box-shadow:0 10px 35px #0001;display:grid;grid-template-columns:repeat(4,1fr);padding:20px;position:relative}
+    .feature{text-align:center;padding:12px;border-right:1px solid #ddd}
+    .feature:last-child{border:0}.feature strong{display:block;font-size:14px}.feature span{font-size:12px;color:var(--muted)}
+    section{max-width:1200px;margin:70px auto;padding:0 5%}
+    .title{text-align:center;font:700 34px Georgia,serif}.title:after{content:"";display:block;width:55px;height:3px;background:var(--gold);margin:12px auto 30px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 5px 22px #0000000d;transition:.2s}
+    .card:hover{transform:translateY(-4px)}
+    .shirt{height:270px;display:flex;align-items:center;justify-content:center;position:relative}
+    .shirt:before{content:"AM";font:700 22px Georgia;color:#fff;background:#111;padding:38px 35px;border-radius:12px 12px 28px 28px;box-shadow:0 15px 25px #0004;transform:scaleX(.82)}
+    .black{background:linear-gradient(135deg,#e9e7e1,#cfcac1)} .navy{background:linear-gradient(135deg,#dfe5eb,#bcc8d2)}
+    .white{background:linear-gradient(135deg,#f5f5f5,#ddd)} .olive{background:linear-gradient(135deg,#d8ddce,#b7c0ad)}
+    .black:before{background:#101010}.navy:before{background:#102844}.white:before{background:#f7f7f7;color:#111}.olive:before{background:#4f5e3d}
+    .info{padding:16px}.info h3{font-size:16px}.price{color:#b27a12;font-weight:bold;font-size:19px;margin:7px 0}
+    .buy{width:100%;border:0;background:var(--navy);color:#fff;padding:11px;border-radius:5px;font-weight:bold;cursor:pointer}
+    .buy:hover{background:#14283d}
+    .banner{background:var(--navy);color:#fff;border-radius:16px;padding:45px;text-align:center}
+    .banner h2{font:700 38px Georgia,serif}.banner p{margin-top:8px;color:#cbd4de}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about img{width:100%;border-radius:15px}.about h2{font:700 38px Georgia,serif;margin-bottom:15px}.about p{color:var(--muted)}
+    footer{background:#050d16;color:#d8dee5;margin-top:80px;padding:50px 5% 20px}
+    .foot{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}.foot h3{color:var(--gold);margin-bottom:15px}.foot a{display:block;margin:8px 0;color:#bdc6d0;font-size:14px}.copy{text-align:center;border-top:1px solid #263443;margin-top:35px;padding-top:18px;font-size:12px;color:#8995a1}
+    .wa{position:fixed;right:20px;bottom:20px;background:#1faf61;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;box-shadow:0 8px 25px #0004;z-index:30}
+    .modal{display:none;position:fixed;inset:0;background:#0008;z-index:40;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}
+    .modal-box{background:#fff;max-width:430px;width:100%;border-radius:14px;padding:25px}.modal-box h2{font:700 28px Georgia,serif}.close{float:right;border:0;background:none;font-size:24px;cursor:pointer}
+    input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:6px}.order{width:100%;border:0;background:var(--gold);padding:13px;font-weight:bold;border-radius:6px;cursor:pointer;margin-top:8px}
+    @media(max-width:800px){.links{display:none}.menu{display:block}.hero-in{grid-template-columns:1fr;min-height:auto;padding-top:45px}.hero-img{max-height:300px}.features{grid-template-columns:1fr 1fr;margin:20px 5%}.feature{border-bottom:1px solid #ddd}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.foot{grid-template-columns:1fr}.hero h1{font-size:45px}}
+  </style>
+</head>
+<body>
+  <div class="top"><b>FREE DELIVERY</b> on orders above PKR 3,000</div>
+  <header><nav>
+    <a class="logo" href="#">AM<small>BRAND</small></a>
+    <div class="links"><a href="#home">HOME</a><a href="#shop">SHOP</a><a href="#collection">COLLECTION</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></div>
+    <button class="menu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+  </nav></header>
+
+  <main id="home">
+    <div class="hero"><div class="hero-in">
+      <div><div class="eyebrow">AM BRAND • PREMIUM COLLECTION</div><h1>Premium <span>Polo</span><br>T-Shirts.</h1>
+      <p>Premium quality fabric, clean finishing and timeless style — made for everyday confidence.</p>
+      <a class="btn" href="#shop">SHOP NOW →</a><a class="btn alt" href="#about">OUR STORY</a></div>
+      <img class="hero-img" src="assets/am-brand-homepage.png" alt="AM Brand premium polo collection">
+    </div></div>
+
+    <div class="features">
+      <div class="feature">✦<strong>Premium Quality</strong><span>Fine fabric</span></div>
+      <div class="feature">□<strong>Easy Returns</strong><span>7 day return</span></div>
+      <div class="feature">🚚<strong>Fast Delivery</strong><span>All over Pakistan</span></div>
+      <div class="feature">✓<strong>Secure Order</strong><span>Cash on delivery</span></div>
+    </div>
+
+    <section id="shop"><h2 class="title">Our Polo Collection</h2><div class="grid">
+      <article class="card"><div class="shirt black"></div><div class="info"><h3>AM Premium Polo — Black</h3><div class="price">PKR 1,199</div><button class="buy" onclick="openOrder('AM Premium Polo — Black')">ORDER NOW</button></div></article>
+      <article class="card"><div class="shirt navy"></div><div class="info"><h3>AM Premium Polo — Navy</h3><div class="price">PKR 1,199</div><button class="buy" onclick="openOrder('AM Premium Polo — Navy')">ORDER NOW</button></div></article>
+      <article class="card"><div class="shirt white"></div><div class="info"><h3>AM Premium Polo — White</h3><div class="price">PKR 1,199</div><button class="buy" onclick="openOrder('AM Premium Polo — White')">ORDER NOW</button></div></article>
+      <article class="card"><div class="shirt olive"></div><div class="info"><h3>AM Premium Polo — Olive</h3><div class="price">PKR 1,199</div><button class="buy" onclick="openOrder('AM Premium Polo — Olive')">ORDER NOW</button></div></article>
+    </div></section>
+
+    <section id="collection"><div class="banner"><h2>Premium Style. Simple Price.</h2><p>AM Brand polos — PKR 1,199 each.</p><a class="btn" href="#shop">EXPLORE POLOS</a></div></section>
+
+    <section id="about"><div class="about">
+      <img src="assets/am-brand-homepage.png" alt="AM Brand">
+      <div><h2>Why AM Brand?</h2><p>We focus on premium-looking essentials with comfortable fabrics, clean details and a modern Pakistani streetwear feel. Choose your color, select your size and place your order directly from the website.</p><a class="btn" href="#shop">SHOP AM BRAND</a></div>
+    </div></section>
+  </main>
+
+  <footer id="contact"><div class="foot">
+    <div><div class="logo">AM<small>BRAND</small></div><p style="margin-top:15px;color:#8995a1">Premium polo T-shirts for everyday style.</p></div>
+    <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#shop">Shop</a><a href="#collection">Collection</a><a href="#about">About Us</a></div>
+    <div><h3>Customer Care</h3><a href="#">Track Order</a><a href="#">Return Policy</a><a href="#">Shipping Policy</a><a href="#">FAQ</a></div>
+    <div><h3>Contact</h3><a href="https://wa.me/923289508836" target="_blank">WhatsApp</a><a href="mailto:your@email.com">Email</a><a href="#">Sargodha, Pakistan</a></div>
+  </div><div class="copy">© 2026 AM Brand. All Rights Reserved.</div></footer>
+
+  <a class="wa" href="https://wa.me/923289508836" target="_blank" aria-label="WhatsApp">WA</a>
+
+  <div class="modal" id="orderModal"><div class="modal-box">
+    <button class="close" onclick="closeOrder()">×</button><h2>Place Your Order</h2><p id="selected" style="margin:8px 0 14px;color:#68717c"></p>
+    <input id="name" placeholder="Your name"><input id="phone" placeholder="Phone / WhatsApp number"><input id="address" placeholder="Delivery address">
+    <select id="size"><option value="">Select size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+    <button class="order" onclick="sendOrder()">SEND ORDER ON WHATSAPP</button>
+  </div></div>
+
+  <script>
+    let selectedProduct='';
+    function openOrder(product){selectedProduct=product;document.getElementById('selected').textContent=product+' — PKR 1,199';document.getElementById('orderModal').classList.add('show')}
+    function closeOrder(){document.getElementById('orderModal').classList.remove('show')}
+    function sendOrder(){
+      const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),a=document.getElementById('address').value.trim(),s=document.getElementById('size').value;
+      if(!n||!p||!a||!s){alert('Please fill all order details.');return}
+      const msg=`Assalam o Alaikum, I want to order:%0A%0AProduct: ${encodeURIComponent(selectedProduct)}%0APrice: PKR 1,199%0ASize: ${encodeURIComponent(s)}%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AAddress: ${encodeURIComponent(a)}`;
+      window.open('https://wa.me/923289508836?text='+msg,'_blank');
+    }
+  </script>
+</body>
+</html>
